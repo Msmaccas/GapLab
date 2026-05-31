@@ -1,0 +1,35 @@
+[
+  {
+    "ticker": "AAPL",
+    "gapPercent": 3.5,
+    "catalystQuality": "HIGH",
+    "relativeVolume": 2.1,
+    "liquidityScore": 0.9,
+    "float": 16.0,
+    "priorSupportResistance": "previous highs near 170",
+    "recentBaseStructure": "multi-week consolidation",
+    "openingDrive": "UP"
+  },
+  {
+    "ticker": "XYZ",
+    "gapPercent": -4.2,
+    "catalystQuality": "LOW",
+    "relativeVolume": 0.4,
+    "liquidityScore": 0.3,
+    "float": 5.0,
+    "priorSupportResistance": "no clear support",
+    "recentBaseStructure": "loose downtrend",
+    "openingDrive": "DOWN"
+  },
+  {
+    "ticker": "GME",
+    "gapPercent": 8.0,
+    "catalystQuality": "MEDIUM",
+    "relativeVolume": 1.5,
+    "liquidityScore": 0.7,
+    "float": 2.0,
+    "priorSupportResistance": "resistance at 25",
+    "recentBaseStructure": "flag",
+    "openingDrive": "UP"
+  }
+]

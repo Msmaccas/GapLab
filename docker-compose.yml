@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  gaplab:
+    build: .
+    ports:
+      - "3099:3000"
+    environment:
+      - PORT=3000
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:3000

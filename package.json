@@ -1,0 +1,27 @@
+{
+  "name": "gaplab-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "rm -rf packages/*/dist apps/*/.next apps/*/out packages/server/public",
+    "build": "npm run clean && npm run build -w packages/core && npm run build -w packages/data && npm run build -w packages/providers && npm run build -w packages/agents && npm run build -w packages/workflows && npm run build -w packages/reports && npm run build -w packages/worker && npm run build -w packages/server && npm run build -w apps/web && node scripts/copy-web-to-server.js",
+    "test": "node scripts/run-tests.js",
+    "smoke": "node scripts/smoke.js",
+    "hygiene": "node scripts/check-repo-hygiene.js",
+    "start": "node packages/server/dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "cross-env": "^7.0.3"
+  }
+}

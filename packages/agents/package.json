@@ -1,0 +1,16 @@
+{
+  "name": "@gaplab/agents",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "node -e \"console.log('Skipping package tests')\""
+  },
+  "dependencies": {
+    "@gaplab/core": "0.1.0",
+    "@gaplab/providers": "0.1.0"
+  }
+}
